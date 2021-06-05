@@ -1,0 +1,73 @@
+body{
+    height : 100vh;
+    background: #323a45;
+    overflow: hidden;
+}
+.container{
+    position : absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo-bg{
+    position: relative;
+    background: linear-gradient(
+    145deg,
+     #3951f1 0%,
+     #c92bb7 60%)no-repeat;
+     height: 200px;
+     width: 200px;
+     border-radius: 50px;
+     box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+     overflow: hidden;
+}
+.logo-bg::before{
+   
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+       background:  radial-gradient(
+            circle farthest-corner at 28% 100%,
+            #fcdf8f 0%, #fbd377 10%, #fa8e37 22%, 
+            #f73344 35%, #f7334400 65%
+        )no-repeat;
+    
+}
+.logo-bg .logo{
+    position: absolute;
+    box-sizing: border-box;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: transparent;
+    border : 12px solid #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo-bg .logo:before{
+    position: absolute;
+    content: '';
+    height: 150px;
+    width: 150px;
+    border-radius: 50px;
+    background: transparent;
+    border: 12px solid #fff;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo-bg .logo:after{
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #fff;
+    top: -19px;
+    right: -19px;
+}
